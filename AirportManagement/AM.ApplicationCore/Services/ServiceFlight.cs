@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AM.ApplicationCore.Services
 {
-    public class ServiceFlight
+    public class ServiceFlight:IServiceFlight
     {
         public List<Flight> Flights { get; set; }=new List<Flight>();
 
@@ -83,7 +83,5 @@ namespace AM.ApplicationCore.Services
             
 
         }
-
-
     }
 }

@@ -9,14 +9,17 @@ namespace AM.ApplicationCore.Interfaces
 {
     public interface IServiceFlight
     {
+        #region Delegate
         public IList<DateTime> GetFlightDates(string destination);
         public void GetFlights(string filterType, string filterValue);
         public void ShowFlightDetails(Plane plane);
         public int ProgrammedFlightNumber(DateTime startDate);
         public double DestinationAvg(string destination);
         public IList<Flight> OrderedDurationFlights();
-        public IList<Flight> OrderedDurationFlights2();
-
+        public IList<Traveller> SeniorTravellers(Flight flight);
+        public IList<Passenger> SeniorTravellers2(Flight flight);
+        public void DestinationGroupedFlights();
+        #endregion
 
 
 
